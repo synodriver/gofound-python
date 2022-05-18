@@ -22,8 +22,7 @@ def search():
 
     # 遍历数据
     if res.get('state'):
-        documents = res.get('data').get('documents')
-        if documents:
+        if documents := res.get('data').get('documents'):
             for item in documents:
                 print(item)
 
@@ -38,8 +37,7 @@ def highlight():
 
     # 遍历数据
     if res.get('state'):
-        documents = res.get('data').get('documents')
-        if documents:
+        if documents := res.get('data').get('documents'):
             for item in documents:
                 print(item)
 
